@@ -51,6 +51,9 @@
             font-family: sans-serif;
             background-color: black;
         }
+        .tracker{
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -62,6 +65,16 @@
         <li><a href="International Space Station Fun Facts.html">Fun Facts</a></li>
         <li><a href="International Space Station Quiz.html">Quiz</a></li>
     </ul>
+
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <h1>Overview</h1>
     <h2>What is the International Space Station?</h2>
     <p><br>The International Space Station, also known as the ISS, is a laboratory and spacecraft orbiting around the
@@ -85,15 +98,31 @@
     <img src="https://www.telegraph.co.uk/content/dam/technology/2017/04/04/TELEMMGLPICT000086688901_trans%2B%2BplGOf-dgG3z4gg9owgQTXDVXE4-NcPVfcZy5a1cUJ04.jpeg"
         , height=220>
     <img src="https://i.ytimg.com/vi/swzjFGHs27c/maxresdefault.jpg" , height=220>
-    <img src="https://cdn.mos.cms.futurecdn.net/9kLxd4H9nUtKvUbqJWdgk6.jpg" , height=220>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/ISS_configuration_2019-08.png/1024px-ISS_configuration_2019-08.png"
-        , width=1200>
-    <iframe width="1000" height="600" src="https://www.youtube.com/embed/rfYJEI6KjFg" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2011/08/international_space_station_exploded_diagram/9657985-4-eng-GB/International_Space_Station_exploded_diagram_pillars.jpg"
+        , width=1000>
+    <iframe 
+        width="1000" 
+        height="600" 
+        src="https://www.youtube.com/embed/rfYJEI6KjFg" 
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
     </iframe>
     <blockquote class="embedly-card"><h4><a href="http://www.ustream.tv/channel/iss-hdev-payload">ISS HD Earth Viewing Experiment</a></h4></blockquote>
     <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-    <p>Visit <a href = "http://wsn.spaceflight.esa.int/iss/index_portal.php">ESA Tracker</a> for a real time ISS tracker</p>
+    <div class="tracker">
+    <iframe src="http://wsn.spaceflight.esa.int/iss/index_portal.php" 
+        style="border:0px #ffffff none;" 
+        name="myiFrame" 
+        scrolling="no" 
+        frameborder="0" 
+        marginheight="0px" 
+        marginwidth="0px" 
+        height="560px" 
+        width="600px" 
+        allowfullscreen>
+    </iframe>
+    </div>
 </body>
 
 </html>
